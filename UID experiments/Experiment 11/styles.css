@@ -1,0 +1,70 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.container {
+  text-align: center;
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Allow vertical scrolling in the container */
+  max-height: 95vh; /* Make sure the container doesn't exceed the viewport height */
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.chart-container {
+  margin-bottom: 40px;
+  overflow: auto; /* Allow scrolling for the chart container */
+}
+
+canvas {
+  width: 100% !important;
+  height: 150px; /* Reduce height of both charts */
+  margin: 0 auto;
+}
+
+#pieChart {
+  height: 120px; /* Reduce the pie chart height further */
+}
+
+@media (max-width: 768px) {
+  canvas {
+    height: 150px; /* Slightly smaller for medium screens */
+  }
+
+  #pieChart {
+    height: 100px; /* Even smaller pie chart on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  canvas {
+    height: 120px; /* Reduce chart size further for small screens */
+  }
+
+  #pieChart {
+    height: 80px; /* Much smaller pie chart on small screens */
+  }
+}

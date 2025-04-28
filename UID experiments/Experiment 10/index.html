@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banking App Login Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Login/Register</h2>
+      <form id="login-form">
+        <!-- Email Field -->
+        <div class="input-container">
+          <label for="email">Email</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+          />
+          <span class="error-message" id="email-error"
+            >Please enter a valid email address.</span
+          >
+        </div>
+
+        <!-- Phone Number Field -->
+        <div class="input-container">
+          <label for="phone">Phone Number</label>
+          <input
+            type="text"
+            id="phone"
+            name="phone"
+            placeholder="Enter your phone number"
+          />
+          <span class="error-message" id="phone-error"
+            >Phone number must be 10 digits long.</span
+          >
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" id="submit-btn">Submit</button>
+      </form>
+      <div id="success-message" class="success-message" style="display: none">
+        Form submitted successfully!
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
